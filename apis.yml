@@ -1,7 +1,12 @@
 aid: market-vibe
 name: Market Vibe
-description: Market Vibe is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'MarketVibe (marketvibe.com) is a finance and technology news blog that publishes ongoing
+  coverage under the tagline "The Financial Status of the World" — market trends, startup funding, and
+  developer-focused technology news (for example, recurring roundups of Replit funding talks, feature
+  releases, and AI developments). It is a WordPress.com / Newspack-hosted publication organized into Tech,
+  Finance, and Lifestyle categories, offering articles and an RSS feed rather than a developer API product.
+  It was surfaced as a 500 Global portfolio lead and added to the API Evangelist network; enrichment found
+  a content/media site with no product API surface (only the default WordPress REST API at /wp-json/).'
 url: https://raw.githubusercontent.com/api-evangelist/market-vibe/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +14,29 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://i0.wp.com/marketvibe.com/wp-content/uploads/2025/03/cropped-site.webp?fit=192%2C192&ssl=1
 tags:
 - Company
+- Finance
+- News
+- Media
+- Blog
+- Technology
+- Startups
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/market-vibe-domain-security.yml
 - type: Website
   url: https://marketvibe.com
+- type: Blog
+  url: https://marketvibe.com/blog/
+- type: BlogRSS
+  url: https://marketvibe.com/feed/
+- type: Support
+  url: https://marketvibe.com/contact/
+- type: About
+  url: https://marketvibe.com/about/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
